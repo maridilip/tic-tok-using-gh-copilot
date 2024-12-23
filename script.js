@@ -4,12 +4,12 @@ let player1Name = '';
 let player2Name = '';
 
 function submitNames() {
-    player1Name = document.getElementById('player1Name').value;
-    player2Name = document.getElementById('player2Name').value;
+    const player1Name = document.getElementById('player1Name').value;
+    const player2Name = document.getElementById('player2Name').value;
     if (player1Name && player2Name) {
-        toggleVisibility('playerInputs', false);
-        toggleVisibility('gameControls', true);
-        toggleVisibility('gameContainer', true);
+        document.getElementById('playerInputs').style.display = 'none';
+        document.getElementById('gameControls').style.display = 'block';
+        document.getElementById('gameContainer').style.display = 'grid';
         startGame();
     } else {
         alert('Please enter names for both players.');

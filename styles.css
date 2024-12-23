@@ -6,6 +6,10 @@ body, html {
     align-items: center;
     background-color: #e0f7fa;
 }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -14,6 +18,8 @@ body, html {
     width: 90vmin;
     height: 90vmin;
     position: relative;
+    max-width: 300px;
+    margin: 0 auto;
 }
 .cell {
     display: flex;
@@ -24,6 +30,10 @@ body, html {
     font-size: 5vmin;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    font-size: 2em;
 }
 .cell:hover {
     background-color: #b2ebf2;
@@ -54,4 +64,16 @@ body, html {
     margin: 5px;
     padding: 10px;
     font-size: 1em;
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cell {
+        width: 80px;
+        height: 80px;
+    }
 }
