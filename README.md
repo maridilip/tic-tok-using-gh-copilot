@@ -12,7 +12,7 @@ This is a simple Tic-Tac-Toe game implemented using HTML, CSS, and JavaScript. T
 
 ## How to Play
 
-1. Open the `index.html` file in a web browser.
+1. Open the  `index.html` file in a web browser.
 2. Enter the names of Player 1 and Player 2 in the input fields and click the "Submit" button.
 3. The game will start automatically.
 4. Players take turns clicking on the cells to make their moves.
